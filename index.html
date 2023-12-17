@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Number Converter</h1>
+      <div class="form">
+        <select name="numberSystem" id="numberSystem" onchange="nullInput()">
+          <option value="Binary">Binary</option>
+          <option value="Octal">Octal</option>
+          <option value="Decimal">Decimal</option>
+          <option value="HexaDecimal">HexaDecimal</option>
+        </select>
+        <input type="text" name="number" id="number" value="" />
+        <input
+          type="submit"
+          class="submit"
+          value="Convert"
+          onclick="output()"
+        />
+      </div>
+      <div class="result">
+        <h1>Result</h1>
+        <div class="table">
+            <div class="item">
+              <h3 class="lable" id="showBinary">Binary</h3>
+              <div class="digit">2</div>
+            </div>
+            <div class="item">
+              <h3 class="lable" id="showOctal">Octal</h3>
+              <div class="digit">8</div>
+            </div>
+          <div class="item">
+            <h3 class="lable" id="showDecimal">Decimal</h3>
+            <div class="digit">10</div>
+          </div>
+          <div class="item">
+            <h3 class="lable" id="showHexaDecimal">HexaDecimal</h3>
+            <div class="digit">16</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
